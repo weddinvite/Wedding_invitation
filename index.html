@@ -29,16 +29,6 @@ p{line-height:1.9}
 .small{font-size:12px;letter-spacing:3px}
 button{cursor:pointer;font-family:inherit}
 
-/* IMAGE LINKS */
-:root{
- --bride:url('https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/bride.jpg');
- --couple:url('https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/couple.jpg');
- --dance:url('https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/dance.jpg');
- --logo:url('https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/logo.jpg');
- --scooter:url('https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/scooter.jpg');
- --shehnai:url('https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/shehnai.jpg');
-}
-
 /* OPENING CURTAINS */
 #cover{
  height:100svh;
@@ -48,7 +38,7 @@ button{cursor:pointer;font-family:inherit}
  align-items:center;
  justify-content:center;
  overflow:hidden;
- background:#f8e9d8 var(--couple) center/cover no-repeat
+ background:#f8e9d8 url('https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/couple.jpg') center/cover no-repeat
 }
 .cover-content{
  background:#fffaf0ef;
@@ -169,7 +159,7 @@ button{cursor:pointer;font-family:inherit}
 .events{background:#fffaf3}
 .event{
  max-width:500px;
- margin:20px auto;
+ margin:28px auto;
  background:#fff;
  border:1px solid #d6b78a;
  padding:22px;
@@ -186,6 +176,46 @@ button{cursor:pointer;font-family:inherit}
  letter-spacing:2px
 }
 .event .time{font-size:15px;margin-top:7px}
+
+/* EVENT PHOTOS */
+.event-photo{
+ width:100%;
+ max-width:430px;
+ margin:0 auto 20px;
+ padding:7px;
+ background:#fffaf2;
+ border:1px solid #d5b78b;
+ box-shadow:0 5px 18px #593b4320
+}
+.event-photo img{
+ width:100%;
+ height:auto;
+ max-height:330px;
+ object-fit:cover;
+ display:block
+}
+
+/* VENUE */
+.venue{
+ background:#f4e5e3;
+ padding:45px 18px
+}
+.venue h2{margin-bottom:12px}
+.location-btn{
+ display:inline-block;
+ margin-top:22px;
+ padding:14px 28px;
+ background:#9a6377;
+ color:white;
+ text-decoration:none;
+ border:2px solid #d9b574;
+ border-radius:30px;
+ font-size:14px;
+ font-weight:500;
+ letter-spacing:1px;
+ box-shadow:0 4px 12px #593b4325
+}
+.location-btn:active{transform:scale(.97)}
 
 /* RSVP */
 .rsvp{background:#f4e7e2}
@@ -257,11 +287,6 @@ footer h2{color:#edc99b}
  <div class="divider">❧ ✦ ❧</div>
  <h2>Two Souls, One Journey</h2>
  <p>With immense joy, we invite you to bless the beginning of our forever.</p>
-
- <div class="frame">
-  <img src="https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/bride.jpg" alt="Bride illustration">
-  <div class="caption">Our beautiful bride, Himangi</div>
- </div>
 </section>
 
 <!-- COUNTDOWN -->
@@ -283,83 +308,95 @@ footer h2{color:#edc99b}
  </div>
 </section>
 
-<!-- PHOTO STORY -->
-<section>
- <p class="small gold">THE CELEBRATION OF LOVE</p>
- <h2>Our Beautiful Journey</h2>
-
- <div class="frame">
-  <img src="https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/shehnai.jpg" alt="Bride and groom playing shehnai">
-  <div class="caption">Let the music of love begin</div>
- </div>
-
- <div class="frame">
-  <img src="https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/dance.jpg" alt="Wedding dance celebration">
-  <div class="caption">Dance, laughter and happiness</div>
- </div>
-
- <div class="frame">
-  <img src="https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/scooter.jpg" alt="Just married couple on scooter">
-  <div class="caption">Together, forever and always</div>
- </div>
-
- <div class="frame">
-  <img src="https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/couple.jpg" alt="Akash and Himangi">
-  <div class="caption">Akash ♥ Himangi</div>
- </div>
-</section>
-
 <!-- WEDDING EVENTS -->
 <section class="events">
  <p class="small gold">SAVE THE DATES</p>
  <h2>Wedding Celebrations</h2>
  <div class="divider">❀ ❧ ❀</div>
 
+ <!-- MEHNDI -->
  <div class="event">
+  <div class="event-photo">
+   <img src="https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/bride.jpg" alt="Bride photo">
+  </div>
   <p class="date">08 FEBRUARY 2027</p>
   <h3>Mehndi Ceremony</h3>
   <p class="time">2:00 PM – 4:00 PM</p>
   <p>Baran</p>
  </div>
 
+ <!-- BASAN -->
  <div class="event">
   <p class="date">10 FEBRUARY 2027</p>
   <h3>Basan</h3>
   <p class="time">9:00 AM</p>
  </div>
 
+ <!-- MAYRA -->
  <div class="event">
   <p class="date">10 FEBRUARY 2027</p>
   <h3>Mayra</h3>
   <p class="time">11:00 AM</p>
  </div>
 
+ <!-- HALDI -->
  <div class="event">
+  <div class="event-photo">
+   <img src="https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/shehnai.jpg" alt="Shehnai ceremony photo">
+  </div>
   <p class="date">10 FEBRUARY 2027</p>
   <h3>Haldi Ceremony</h3>
   <p class="time">3:00 PM</p>
  </div>
 
+ <!-- SANGEET -->
  <div class="event">
+  <div class="event-photo">
+   <img src="https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/dance.jpg" alt="Sangeet dance photo">
+  </div>
   <p class="date">10 FEBRUARY 2027</p>
   <h3>Sangeet Night</h3>
   <p class="time">7:00 PM – 10:00 PM</p>
   <p>Let's celebrate with music and dance!</p>
  </div>
 
+ <!-- PHERE -->
  <div class="event">
+  <div class="event-photo">
+   <img src="https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/scooter.jpg" alt="Couple on scooter">
+  </div>
   <p class="date">11 FEBRUARY 2027</p>
   <h3>Shubh Phere</h3>
   <p class="time">11:00 AM</p>
   <p>The beginning of forever</p>
  </div>
 
+ <!-- RECEPTION -->
  <div class="event">
+  <div class="event-photo">
+   <img src="https://raw.githubusercontent.com/weddinvite/Wedding_invitation/main/couple.jpg" alt="Akash and Himangi together">
+  </div>
   <p class="date">11 FEBRUARY 2027</p>
   <h3>Wedding Reception</h3>
   <p class="time">7:00 PM</p>
   <p>Join us for an evening of celebration.</p>
  </div>
+</section>
+
+<!-- WEDDING VENUE -->
+<section class="venue">
+ <p class="small gold">CELEBRATE WITH US</p>
+ <h2>Wedding Venue</h2>
+ <h3>Aashika Resort</h3>
+ <p>Behind Sukhadia Stadium, Atun Road</p>
+ <p>Bhilwara, Rajasthan 311001</p>
+
+ <a class="location-btn"
+ href="https://www.google.com/maps/search/?api=1&query=Aashika+Resort+Behind+Sukhadia+Stadium+Atun+Road+Bhilwara+Rajasthan+311001"
+ target="_blank"
+ rel="noopener">
+  VIEW LOCATION 📍
+ </a>
 </section>
 
 <!-- RSVP -->
